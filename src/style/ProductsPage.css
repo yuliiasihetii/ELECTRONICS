@@ -1,0 +1,31 @@
+.search-wrapper {
+    position: relative;
+}
+
+.product-page-search {
+    margin: 25px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #212245;
+    padding: 7px 20px 7px 40px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 38%;
+    left: 0.7%;
+}
+
+.product-pagination {
+    margin-top: 40px;
+}
+
+.css-wjh20t-MuiPagination-ul {
+    justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+    .product-page-search {
+        width: 60%;
+    }
+}

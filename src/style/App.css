@@ -1,0 +1,37 @@
+.app-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #212245;
+}
+
+.white-link {
+    color: white;
+}
+
+.btn-item-outline {
+    color: #212245;
+    border-radius: 10px;
+    border: 1px solid #212245;
+    background-color: white;
+}
+
+.btn-item-fulfilled {
+    color: white !important;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #212245;
+}
+
+h1,
+h2,
+p {
+    color: #212245
+}

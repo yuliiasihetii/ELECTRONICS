@@ -1,0 +1,39 @@
+.tab-form {
+    margin: 40px 0;
+}
+
+.form-wrapper {
+    background-color: lightblue;
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    width: 93%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #212245;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+}
+
+.form-wrapper button {
+    border: none !important
+}
+
+@media screen and (max-width: 965px) {
+    .form-wrapper {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .form-wrapper input,
+    .form-wrapper textarea,
+    .form-wrapper {
+        width: 85%;
+    }
+}

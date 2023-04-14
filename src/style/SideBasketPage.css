@@ -1,0 +1,146 @@
+.side-basket-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.639);
+    z-index: 1000;
+}
+
+.side-basket {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    z-index: 999999999;
+    border-radius: none;
+}
+
+.side-basket-close {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.side-basket-close span {
+    font-size: 20px;
+    background: #212245;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.side-basket-item-list {
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
+.side-basket-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 20px;
+    width: 100%;
+    background: #212245;
+}
+
+.checkout {
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 7px 20px;
+    margin-bottom: 20px;
+}
+
+.side-basket-footer-tite {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.side-basket-footer-totalAmount {
+    color: #df2020;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.side-basket-product-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.increase-decrease-btn-wrapper {
+    width: 100%;
+    background-color: lightblue;
+    border-radius: 5px;
+    font-size: 17px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.increase-decrease-btn-wrapper span {
+    padding: 5px 10px;
+}
+
+.side-basket-item-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 10px 0 20px;
+    margin-bottom: 10px;
+}
+
+.side-basket-product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.side-basket-product-info {
+    width: 150px;
+}
+
+.side-basket-product-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.side-basket-product-price-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.side-basket-product-price {
+    font-size: 14px;
+    margin: 0;
+}
+
+.side-basket-product-price-info span {
+    color: #df2020;
+    font-weight: 500;
+}
+
+.empty-side-basket {
+    text-align: center;
+}
+
+@media only screen and (max-width:576px) {
+    .side-basket {
+        width: 100%;
+    }
+}
