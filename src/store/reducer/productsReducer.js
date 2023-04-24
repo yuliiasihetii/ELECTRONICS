@@ -15,7 +15,7 @@ export default function productsReducer(state = INITIAL_VALUE, { type, payload }
         case SET_PRODUCT_LIST_ACTION_TYPE: return { ...state, list: payload }
         case SET_PRODUCT_DETAILS_ACTION_TYPE: return { ...state, currentProductDetails: payload }
         case SET_CATEGORY_LIST_ACTION_TYPE: return { ...state, categoryList: payload }
-        case ADD_PRODUCT_TO_CART_ACTION_TYPE: return { ...state, cartList: [...state.cartList, payload] }
+        case ADD_PRODUCT_TO_CART_ACTION_TYPE: return { ...state, cartList: [...state.cartList, payload], isSideBasketActive: !state.isSideBasketActive }
         case DELETE_PRODUCT_FROM_CART_ACTION_TYPE: return { ...state, cartList: state.cartList.filter((item) => item.id !== payload) }
         case UPDATED_CART_ACTION_TYPE: return { ...state, cartList: state.cartList.map(item => item.id !== payload.id ? item : { ...item, quatity: item.quatity + payload.quatity }) }
         case TOGGLE_SIDE_BASKET_ACTION_TYPE: return { ...state, isSideBasketActive: !state.isSideBasketActive }
